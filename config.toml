@@ -33,9 +33,7 @@ disqusShortname = "spencerlyon"
     name = "Spencer Lyon"
     email = "spencer.lyon@stern.nyu.edu"
 
-#
 # All parameters below here are optional and can be mixed and matched.
-#
 [params]
     # You can use markdown here.
     brand = "sglyon"
