@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Custom URL with GitHub Pages and DynDns  &middot; Spencer Lyon</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="Details how I got my custom domain purchased from dyndns.org to redirect to my GitHub pages site." />
+
+<meta name="keywords" content="web, ">
+
+
+<meta property="og:title" content="Custom URL with GitHub Pages and DynDns  &middot; Spencer Lyon ">
+<meta property="og:site_name" content="Spencer Lyon"/>
+<meta property="og:url" content="http://spencerlyon2.github.io/2014/03/21/custom-url-with-github-pages-and-dyndns/" />
+<meta property="og:locale" content="en-EN">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content="Details how I got my custom domain purchased from dyndns.org to redirect to my GitHub pages site."/>
+<meta property="og:article:published_time" content="2014-03-21T00:00:00Z" />
+<meta property="og:article:modified_time" content="2014-03-21T00:00:00Z" />
+
+  
+    
+<meta property="og:article:tag" content="web">
+    
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@spencerlyon2" />
+<meta name="twitter:creator" content="@spencerlyon2" />
+<meta name="twitter:title" content="Custom URL with GitHub Pages and DynDns" />
+<meta name="twitter:description" content="Details how I got my custom domain purchased from dyndns.org to redirect to my GitHub pages site." />
+<meta name="twitter:url" content="http://spencerlyon2.github.io/2014/03/21/custom-url-with-github-pages-and-dyndns/" />
+<meta name="twitter:domain" content="http://spencerlyon2.github.io/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Custom URL with GitHub Pages and DynDns",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2014-03-21",
+    "description": "Details how I got my custom domain purchased from dyndns.org to redirect to my GitHub pages site.",
+    "wordCount":  296 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://spencerlyon2.github.io/2014/03/21/custom-url-with-github-pages-and-dyndns/" />
+
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://spencerlyon2.github.io/touch-icon-144-precomposed.png">
+<link href="http://spencerlyon2.github.io/favicon.png" rel="icon">
+
+<meta name="generator" content="Hugo 0.16-DEV" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<link href='https://fonts.googleapis.com/css?family=Merriweather:300%7CRaleway%7COpen+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://spencerlyon2.github.io/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://spencerlyon2.github.io/css/style.css">
+<link rel="stylesheet" href="http://spencerlyon2.github.io/css/highlight/default.css">
+
+  
+</head>
+<body>
+  <main id="main-wrapper" class="container main_wrapper has-sidebar">
+    <header id="main-header" class="container main_header">
+  <div class="container brand">
+  <div class="container title h1-like">
+  <a class="baselink" href="http://spencerlyon2.github.io/about/">
+  sglyon
+
+</a>
+
+</div>
+
+  
+<div class="container topline">
+  
+  Spencer Lyon
+
+
+</div>
+
+
+</div>
+
+  <nav class="container nav primary no-print">
+  
+
+<a class="homelink" href="http://spencerlyon2.github.io/">Home</a>
+
+
+  
+<a href="http://spencerlyon2.github.io/about">About</a>
+
+<a href="http://spencerlyon2.github.io/post" title="Show list of posts">Posts</a>
+
+<a href="http://spencerlyon2.github.io/tags" title="Show list of tags">Tags</a>
+
+
+</nav>
+
+<div class="container nav secondary no-print">
+  
+<a id="contact-link-email" class="contact_link" href="mailto:spencer.lyon@stern.nyu.edu">
+  <span class="fa fa-envelope-square"></span><span>email</span></a>
+
+
+
+<a id="contact-link-github" class="contact_link" href="https://github.com/spencerlyon2">
+  <span class="fa fa-github-square"></span><span>github</span></a>
+
+
+
+<a id="contact-link-bitbucket" class="contact_link" href="https://bitbucket.org/spencerlyon2">
+  <span class="fa fa-bitbucket-square"></span><span>bitbucket</span></a>
+
+
+
+
+
+
+
+
+
+<a id="contact-link-twitter" class="contact_link" href="https://twitter.com/spencerlyon2">
+  <span class="fa fa-twitter-square"></span><span>twitter</span></a>
+
+
+
+
+
+<a id="contact-link-rss" class="contact_link" href="" type="application/rss+xml">
+  <span class="fa fa-rss-square"></span><span>rss</span></a>
+
+
+
+</div>
+
+
+  
+
+</header>
+
+
+<article id="main-content" class="container main_content single">
+  <header class="container hat">
+  <h1>Custom URL with GitHub Pages and DynDns
+</h1>
+
+  <div class="metas">
+<time datetime="2014-03-21">21 Mar, 2014</time>
+
+
+  
+  &middot; Read in about 2 min
+  &middot; (296 Words)
+  <br>
+  
+<a class="label" href="http://spencerlyon2.github.io/tags/web">web</a>
+
+
+
+</div>
+
+</header>
+
+  <div class="container content">
+  
+
+<h2 id="buying-a-domain:f0af3fb60725f0a1651c81664d3a6b47">Buying a Domain</h2>
+
+<p>I think that the domain name <a href="http://spencerlyon2.github.io">spencerlyon2.github.io</a> is alright, but I really want my GitHub Pages website to point to a custom domain that I own. So, I went to <a href="http://dyndns.org">dyndns.org</a> and purchased the domain <a href="sglyon.com">sglyon.com</a>. It cost me $50.00 for two years. (<font size=2>I since learned of another website called <a href="http://namecheap.com">namecheap.com</a> that only costs about $10.00 a year, depending on the extension of the domain. If I were to do it again, I would register my domain name through them.</font> )</p>
+
+<h2 id="getting-github-pages-pointed-to-the-right-place:f0af3fb60725f0a1651c81664d3a6b47">Getting GitHub Pages Pointed to the Right Place</h2>
+
+<p>This is the easiest step. I simply created a file named <code>CNAME</code> that has only the content</p>
+
+<pre><code>sglyon.com
+</code></pre>
+
+<p>That&rsquo;s all on the GitHub end: pretty easy!</p>
+
+<h2 id="setting-up-dns-on-dyndns-website:f0af3fb60725f0a1651c81664d3a6b47">Setting up DNS on DynDns website</h2>
+
+<p>This was the most confusing part for a web programming newb like me. After searching through the <a href="https://help.github.com/articles/setting-up-a-custom-domain-with-pages">setting up a custom domain</a> and <a href="https://help.github.com/articles/my-custom-domain-isn-t-working">troubleshooting</a> pages from the GitHub pages help site, I finally found a solution.</p>
+
+<p>I ended up creating (modifying) 3 records:</p>
+
+<ul>
+<li>An <code>A</code> record that points to <code>192.30.252.153</code> with TTL set to <code>1800</code></li>
+<li>An <code>A</code> record that points to <code>192.30.252.154</code> with TTL set to <code>1800</code></li>
+<li>A <code>CNAME</code> record that points to <code>spencerlyon2.github.io</code> with TTL set to <code>1800</code></li>
+</ul>
+
+<p>In the end the configuration page on my Dns management page looked like the image below.</p>
+
+<!-- ![Hostname setup for DynDns and GitHub Pages](/images/DynHostnames.png) -->
+
+<div class="container-fluid">
+<img src="/images/DynHostnames.png" alt="Hostname setup for DynDns and GitHub Pages" class="img-responsive center-block"/>
+</div>
+
+<h2 id="verifying-and-testing:f0af3fb60725f0a1651c81664d3a6b47">Verifying and Testing</h2>
+
+<p>I then verified that my domain name pointed to the GitHub servers using the command <code>dig sglyon.com  +nostats +nocomments +nocmd</code> and was pleased it returned the following:</p>
+
+<pre><code>; &lt;&lt;&gt;&gt; DiG 9.8.3-P1 &lt;&lt;&gt;&gt; sglyon.com +nostats +nocomments +nocmd
+;; global options: +cmd
+;sglyon.com.      IN  A
+sglyon.com.   1405  IN  A 192.30.252.154
+sglyon.com.   1405  IN  A 192.30.252.153
+</code></pre>
+
+<p>After waiting for about ten minutes I could successfully point my browser to <code>sglyon.com</code> and it would open up this website!</p>
+
+</div>
+
+
+  <footer class="container">
+  <div class="container navigation no-print">
+  <h2>Navigation</h2>
+  
+  
+
+    
+    <a class="prev" href="http://spencerlyon2.github.io/2014/03/15/hugo-and-github-pages/" title="Hugo and GitHub Pages">
+      Previous
+    </a>
+    
+
+    
+
+  
+
+
+</div>
+
+  <div class="container comments">
+  <h2>Comments</h2>
+  
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//sglyon.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+</div>
+
+</footer>
+
+</article>
+      <footer id="main-footer" class="container main_footer">
+  
+
+  <div class="container nav foot no-print">
+  
+
+  <a class="toplink" href="#">back to top</a>
+
+</div>
+
+  <div class="container credits">
+  
+<div class="container footline">
+  
+  <em>Vade cum Deo et computare similis diabolo</em>
+
+
+</div>
+
+
+  
+<div class="container copyright">
+  
+  &copy; 2015 Spencer Lyon.
+
+
+</div>
+
+
+</div>
+
+</footer>
+
+    </main>
+    
+<script type="text/javascript">
+  (function() {
+    
+    
+    if (window.location.hostname == "localhost")
+      return;
+
+    var dsq = document.createElement('script'); dsq.async = true; dsq.type = 'text/javascript';
+    dsq.src = '//sglyon.disqus.com/count.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+
+<script src="http://spencerlyon2.github.io/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'Your Google Analytics tracking code', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+    
+  </body>
+</html>
+

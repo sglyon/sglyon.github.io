@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Web on Spencer Lyon</title>
+    <link>http://spencerlyon2.github.io/tags/web/</link>
+    <description>Recent content in Web on Spencer Lyon</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-EN</language>
+    <managingEditor>spencer.lyon@stern.nyu.edu (Spencer Lyon)</managingEditor>
+    <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
+    <copyright>(c) 2015 Spencer Lyon.</copyright>
+    <lastBuildDate>Fri, 21 Mar 2014 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://spencerlyon2.github.io/tags/web/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Custom URL with GitHub Pages and DynDns</title>
+      <link>http://spencerlyon2.github.io/2014/03/21/custom-url-with-github-pages-and-dyndns/</link>
+      <pubDate>Fri, 21 Mar 2014 00:00:00 +0000</pubDate>
+      <author>spencer.lyon@stern.nyu.edu (Spencer Lyon)</author>
+      <guid>http://spencerlyon2.github.io/2014/03/21/custom-url-with-github-pages-and-dyndns/</guid>
+      <description>
+
+&lt;h2 id=&#34;buying-a-domain:f0af3fb60725f0a1651c81664d3a6b47&#34;&gt;Buying a Domain&lt;/h2&gt;
+
+&lt;p&gt;I think that the domain name &lt;a href=&#34;http://spencerlyon2.github.io&#34;&gt;spencerlyon2.github.io&lt;/a&gt; is alright, but I really want my GitHub Pages website to point to a custom domain that I own. So, I went to &lt;a href=&#34;http://dyndns.org&#34;&gt;dyndns.org&lt;/a&gt; and purchased the domain &lt;a href=&#34;sglyon.com&#34;&gt;sglyon.com&lt;/a&gt;. It cost me $50.00 for two years. (&lt;font size=2&gt;I since learned of another website called &lt;a href=&#34;http://namecheap.com&#34;&gt;namecheap.com&lt;/a&gt; that only costs about $10.00 a year, depending on the extension of the domain. If I were to do it again, I would register my domain name through them.&lt;/font&gt; )&lt;/p&gt;
+
+&lt;h2 id=&#34;getting-github-pages-pointed-to-the-right-place:f0af3fb60725f0a1651c81664d3a6b47&#34;&gt;Getting GitHub Pages Pointed to the Right Place&lt;/h2&gt;
+
+&lt;p&gt;This is the easiest step. I simply created a file named &lt;code&gt;CNAME&lt;/code&gt; that has only the content&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;sglyon.com
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s all on the GitHub end: pretty easy!&lt;/p&gt;
+
+&lt;h2 id=&#34;setting-up-dns-on-dyndns-website:f0af3fb60725f0a1651c81664d3a6b47&#34;&gt;Setting up DNS on DynDns website&lt;/h2&gt;
+
+&lt;p&gt;This was the most confusing part for a web programming newb like me. After searching through the &lt;a href=&#34;https://help.github.com/articles/setting-up-a-custom-domain-with-pages&#34;&gt;setting up a custom domain&lt;/a&gt; and &lt;a href=&#34;https://help.github.com/articles/my-custom-domain-isn-t-working&#34;&gt;troubleshooting&lt;/a&gt; pages from the GitHub pages help site, I finally found a solution.&lt;/p&gt;
+
+&lt;p&gt;I ended up creating (modifying) 3 records:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An &lt;code&gt;A&lt;/code&gt; record that points to &lt;code&gt;192.30.252.153&lt;/code&gt; with TTL set to &lt;code&gt;1800&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;An &lt;code&gt;A&lt;/code&gt; record that points to &lt;code&gt;192.30.252.154&lt;/code&gt; with TTL set to &lt;code&gt;1800&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;A &lt;code&gt;CNAME&lt;/code&gt; record that points to &lt;code&gt;spencerlyon2.github.io&lt;/code&gt; with TTL set to &lt;code&gt;1800&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;In the end the configuration page on my Dns management page looked like the image below.&lt;/p&gt;
+
+&lt;!-- ![Hostname setup for DynDns and GitHub Pages](/images/DynHostnames.png) --&gt;
+
+&lt;div class=&#34;container-fluid&#34;&gt;
+&lt;img src=&#34;http://spencerlyon2.github.io/images/DynHostnames.png&#34; alt=&#34;Hostname setup for DynDns and GitHub Pages&#34; class=&#34;img-responsive center-block&#34;/&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&#34;verifying-and-testing:f0af3fb60725f0a1651c81664d3a6b47&#34;&gt;Verifying and Testing&lt;/h2&gt;
+
+&lt;p&gt;I then verified that my domain name pointed to the GitHub servers using the command &lt;code&gt;dig sglyon.com  +nostats +nocomments +nocmd&lt;/code&gt; and was pleased it returned the following:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;; &amp;lt;&amp;lt;&amp;gt;&amp;gt; DiG 9.8.3-P1 &amp;lt;&amp;lt;&amp;gt;&amp;gt; sglyon.com +nostats +nocomments +nocmd
+;; global options: +cmd
+;sglyon.com.      IN  A
+sglyon.com.   1405  IN  A 192.30.252.154
+sglyon.com.   1405  IN  A 192.30.252.153
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After waiting for about ten minutes I could successfully point my browser to &lt;code&gt;sglyon.com&lt;/code&gt; and it would open up this website!&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
