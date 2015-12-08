@@ -53,7 +53,7 @@ disqusShortname = "sglyon"
     highlight = "default"
 
     # Google Analytics.
-    googleAnalytics = "Your Google Analytics tracking code"
+    googleAnalytics = "UA-36732392-1"
 
     # Sidebar social links.
     github = "spencerlyon2" # Your Github profile ID
