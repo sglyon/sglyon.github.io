@@ -1,14 +1,14 @@
-[posts]
+[1]
+    Name = "Research"
+    Title = "CV and publications"
+    URL = "/publications"
+
+[2]
     Name = "Posts"
     Title = "Show list of posts"
     URL = "/post"
 
-[tags]
+[3]
     Name = "Tags"
     Title = "Show list of tags"
     URL = "/tags"
-
-[research]
-    Name = "Research"
-    Title = "CV and publications"
-    URL = "/publications"

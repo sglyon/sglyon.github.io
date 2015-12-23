@@ -2,14 +2,6 @@
 author: Spencer Lyon
 date: 2015-12-23T15:48:14-07:00
 description: "List of publications and working papers"
-keywords:
-- key
-- words
-tags:
-- one
-- two
-topics:
-- topic 1
 ---
 
 # Working Papers
