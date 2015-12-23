@@ -110,7 +110,7 @@ print("(scipy - by hand) for inverse gamma: %.3e" % diff_pdf(ig, ig_pdf, 2.1))
 
 ```
 
-Like like we did identify the correct distribution! In this example we had the same problems as in the example for the normal distribution, but we had additional problems:
+Looks like we did identify the correct distribution! In this example we had the same problems as in the example for the normal distribution, but we had additional problems:
 
 * Even though inverse gamma is a two parameter distribution, the documentation for `scipy.stats.invgamma` never once mentioned a second parameter ($\beta$)
 * The docstring called the distribution by a less well-known name "inverted gamma" instead of inverse gamma
