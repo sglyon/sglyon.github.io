@@ -7,3 +7,8 @@
     Name = "Tags"
     Title = "Show list of tags"
     URL = "/tags"
+
+[research]
+    Name = "Research"
+    Title = "CV and publications"
+    URL = "/publications"
