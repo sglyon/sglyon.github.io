@@ -1,0 +1,9 @@
+<section id="main-content" class="container main_content homepage">
+  <header class="container header">
+    {{ partial "bloc/content/h1-title" . }}
+    {{ partial "bloc/content/lastupdate" . }}
+  </header>
+  {{ range where .Data.Pages "Type" "index" }}
+    {{ .Content }}
+  {{ end }}
+</section>

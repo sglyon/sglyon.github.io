@@ -2,7 +2,7 @@
 title: "Canonical Probability distributions in Python"
 description: "Leveraging scipy.stats to represent probability distributions in Python"
 date: "2015-01-07"
-draft: true
+draft: false
 tags:
     - "python"
     - "statistics"
@@ -35,12 +35,16 @@ Similarly, the pdf for the inverse gamma distribution with shape $\alpha$ and sc
 
 In scipy these distributions are given by `scipy.stats.norm` and `scipy.stats.invgamma`. If we consult the [scipy.stats documentation](http://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.norm.html#scipy.stats.norm) for the normal distribution we would see
 
-> The location (loc) keyword specifies the mean. The scale (scale) keyword specifies the standard deviation.
+```
+The location (loc) keyword specifies the mean. The scale (scale) keyword specifies the standard deviation.
+```
 
 and
 
-> The probability density function for norm is:
->     norm.pdf(x) = exp(-x**2/2)/sqrt(2*pi)
+```
+The probability density function for norm is:
+    norm.pdf(x) = exp(-x**2/2)/sqrt(2*pi)
+```
 
 Wait, what?! This looks nothing like the pdf above, what's going on? Let's move forward and trust that if we set `loc` equal to the mean and `scale` equal to the standard deviation we will get the correct distribution. To verify that this is true, I copied and pasted the following into an IPython session:
 
@@ -76,15 +80,16 @@ Phew, it appears that scipy.stats *is* doing the correct thing! I want to point 
 
 Now lets see what happens when we look up the inverse gamma distribution. From the documentation for [`scipy.stats.invgamma`](http://docs.scipy.org/doc/scipy-0.14.0/reference/generated/scipy.stats.invgamma.html) we read
 
-> An inverted gamma continuous random variable.
+```
+An inverted gamma continuous random variable.
+```
 
 and
 
-> The probability density function for invgamma is:
-
-> ```
-> invgamma.pdf(x, a) = x**(-a-1) / gamma(a) * exp(-1/x)
-> ```
+```
+The probability density function for invgamma is:
+invgamma.pdf(x, a) = x**(-a-1) / gamma(a) * exp(-1/x)
+```
 
 So, this appears to be related to the pdf we have above, but where did $\beta$ go? The docstring also calls this an *inverted* gamma distribution instead of the standard *inverse* gamma, so maybe this isn't actually the inverse gamma distribution? It turns out that it is the inverse gamma distribution where this time the *first positional argument* (I couldn't find it's name after about 20 minutes of searching) takes on the role of $\alpha$ and the `scale` keyword argument represents $\beta$. I verified that this is true in an IPython session also:
 
