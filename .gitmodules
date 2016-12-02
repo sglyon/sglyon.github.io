@@ -1,0 +1,3 @@
+[submodule "themes/hyde-y"]
+	path = themes/hyde-y
+	url = git@github.com:spencerlyon2/hyde-y.git
