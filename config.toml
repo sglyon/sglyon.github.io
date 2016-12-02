@@ -2,7 +2,7 @@ baseurl = "http://spencerlyon.com/"
 title = "Spencer Lyon"
 
 # Copyright
-copyright = "(c) 2015 Spencer Lyon."
+copyright = "(c) 2015-2016 Spencer Lyon."
 
 # Language
 languageCode = "en-EN"
