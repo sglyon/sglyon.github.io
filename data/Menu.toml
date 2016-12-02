@@ -4,11 +4,16 @@
     URL = "/publications"
 
 [2]
+    Name = "Presentations"
+    Title = "Presentations"
+    URL = "/presentations"
+
+[3]
     Name = "Posts"
     Title = "Show list of posts"
     URL = "/post"
 
-[3]
+[4]
     Name = "Tags"
     Title = "Show list of tags"
     URL = "/tags"
