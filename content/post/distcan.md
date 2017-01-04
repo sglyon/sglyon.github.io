@@ -124,7 +124,7 @@ These issues, combined with those highlighted in the first example required me t
 
 ### The Solution: `distcan`
 
-I am in the *very* early stages of a project that will hopefully address these issues. I call the project [`distcan`](https://github.com/spencerlyon2/distcan). The purpose of `distcan` is to expose probability **dist**ributions in their **can**onical form to Python users. Some goals for the project are:
+I am in the *very* early stages of a project that will hopefully address these issues. I call the project [`distcan`](https://github.com/sglyon/distcan). The purpose of `distcan` is to expose probability **dist**ributions in their **can**onical form to Python users. Some goals for the project are:
 
 * Represent probability distributions in their canonical form, with parameters given their standard names
 * Expose an API that is encompasses functionality in Distributions.jl and scipy.stats, with naming conventions that are consistent for users of both packages
@@ -225,4 +225,4 @@ Additionally, each distribution has the following properties (accessed as `dist_
 
 ### Future plans
 
-I plan on adding to `distcan` on an as needed basis -- meaning when I need a new distribution or functionality or another user requests something. If you would like to contribute, check out the project on [GitHub](https://github.com/spencerlyon2/distcan).
+I plan on adding to `distcan` on an as needed basis -- meaning when I need a new distribution or functionality or another user requests something. If you would like to contribute, check out the project on [GitHub](https://github.com/sglyon/distcan).

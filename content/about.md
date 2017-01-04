@@ -15,4 +15,4 @@ University Stern School of Business](http://www.stern.nyu.edu/).
 In addition to church, family, and school; I am also interested in sports, food,
 and programming. I'm fairly active in the Julia community and also (occasionaly) contribute to the SciPy ecosystem.
 
-You can find most of my work on [GitHub](http://github.com/spencerlyon2).
+You can find most of my work on [GitHub](http://github.com/sglyon).
