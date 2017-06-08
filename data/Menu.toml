@@ -9,11 +9,16 @@
     URL = "/presentations"
 
 [3]
-    Name = "Posts"
-    Title = "Show list of posts"
-    URL = "/post"
+    Name = "Teaching and tools"
+    Title = "Teaching/Tools"
+    URL = "/teaching"
 
-[4]
-    Name = "Tags"
-    Title = "Show list of tags"
-    URL = "/tags"
+# [3]
+#     Name = "Posts"
+#     Title = "Show list of posts"
+#     URL = "/post"
+#
+# [4]
+#     Name = "Tags"
+#     Title = "Show list of tags"
+#     URL = "/tags"

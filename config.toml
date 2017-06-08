@@ -2,7 +2,7 @@ baseurl = "http://spencerlyon.com/"
 title = "Spencer Lyon"
 
 # Copyright
-copyright = "(c) 2015-2016 Spencer Lyon."
+copyright = "(c) 2015-2017 Spencer Lyon."
 
 # Language
 languageCode = "en-EN"
@@ -61,7 +61,7 @@ disqusShortname = "sglyon"
     # linkedin = "" # Your LinkedIn profile ID (from public URL)
     twitter = "spencer_lyon" # Your Twitter profile ID
     # youtube = ""  # Your Youtube channel ID
-    rss = true
+    # rss = true
 
 [blackfriday]
     angledQuotes = true
