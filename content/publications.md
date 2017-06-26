@@ -15,6 +15,19 @@ description: "List of publications and working papers"
 
 ---
 
+# In progress
+
+---
+Quantifying the Losses from International Trade
+: with [Michael Waugh]
+
+[Slides from SED June 2017](/files/LW_sed.pdf)
+
+Draft coming soon
+
+---
+
 [Dave Backus]: http://people.stern.nyu.edu/dbackus/ "Dave Backus"
 [Chase Coleman]: https://github.com/cc7768 "Chase Coleman"
 [Axelle Ferriere]: https://sites.google.com/a/nyu.edu/axelleferriere/ "Axelle Ferriere"
+[Michael Waugh]: http://www.waugheconomics.com "Michael Waugh"
