@@ -1,0 +1,73 @@
+baseurl = "http://spencerlyon.com/"
+title = "Spencer Lyon"
+
+# Copyright
+copyright = "(c) 2015-2017 Spencer Lyon."
+
+# Language
+languageCode = "en-EN"
+
+# Metadata format
+# "yaml", "toml", "json"
+metaDataFormat = "yaml"
+
+# Theme to use (located in /themes/THEMENAME/)
+theme = "hyde-y"
+
+# Pagination
+paginate = 10
+paginatePath = "page"
+
+# Enable Disqus integration
+disqusShortname = "sglyon"
+
+[permalinks]
+    post = "/:year/:month/:day/:slug/"
+    code = "/:slug/"
+
+[taxonomies]
+    tag = "tags"
+    topic = "topics"
+
+[author]
+    name = "Spencer Lyon"
+    email = "spencer.lyon@stern.nyu.edu"
+
+# All parameters below here are optional and can be mixed and matched.
+[params]
+    # You can use markdown here.
+    brand = "sglyon"
+    topline = "Spencer Lyon"
+    footline = "_Vade cum Deo et computare similis diabolo_"
+
+    # Sidebar position
+    # false, true, "left", "right"
+    sidebar = true
+
+    # Text for the top menu link, which goes the root URL for the site.
+    # Default (if omitted) is "Home".
+    home = "Home"
+
+    # Select a syntax highight.
+    # Check the static/css/highlight directory for options.
+    highlight = "tomorrow"
+
+    # Google Analytics.
+    googleAnalytics = "UA-36732392-1"
+
+    # Sidebar social links.
+    github = "sglyon" # Your Github profile ID
+    bitbucket = "spencerlyon2" # Your Bitbucket profile ID
+    # linkedin = "" # Your LinkedIn profile ID (from public URL)
+    twitter = "spencer_lyon" # Your Twitter profile ID
+    # youtube = ""  # Your Youtube channel ID
+    # rss = true
+
+[blackfriday]
+    angledQuotes = true
+    fractions = true
+    hrefTargetBlank = false
+    latexDashes = true
+    plainIdAnchors = true
+    extensions = []
+    extensionmask = []
