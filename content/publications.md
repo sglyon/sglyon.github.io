@@ -25,6 +25,28 @@ Quantifying the Losses from International Trade
 
 Draft coming soon
 
+---
+
+[Redistributing the Gains From Trade through Progressive Taxation](/files/LW_tax.pdf)
+: with [Michael Waugh]
+
+[Slides](/files/LW_nber.pdf)
+
+> This paper studies the optimal degree of tax progressivity as an economy opens
+> to trade. We answer this question within a standard incomplete markets model
+> with frictional labor markets and Ricardian trade. Labor market frictions lead
+> to losses in labor income and reductions in labor force participation for
+> import-competition-exposed workers. In an incomplete markets setting, adverse
+> shocks to comparative advantage are imperfectly insured and
+> import-competition-exposed workers experience welfare losses. A progressive tax
+> system transfers resources to the losers from trade and substitutes for
+> imperfect insurance. However, a progressive tax system reduces incentives to
+> work and for labor to reallocate from comparatively disadvantaged locations to
+> locations with a comparative advantage. We calibrate the model to match the
+> observed labor market response to trade exposure and solve for the optimal
+> degree of progressivity of the tax system with varying levels of exposure to
+> trade.
+
 <!-- ---
 
 The Dolo Modeling Framework
