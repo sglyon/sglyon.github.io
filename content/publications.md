@@ -47,7 +47,7 @@ Draft coming soon
 > degree of progressivity of the tax system with varying levels of exposure to
 > trade.
 
-<!-- ---
+---
 
 The Dolo Modeling Framework
 : with [Pablo Winant] and [Anastasia Zhutova]
@@ -56,9 +56,10 @@ The Dolo Modeling Framework
 
 Draft coming soon
 
---- -->
+---
 
-<!-- ---
+---
+
 MATLAB, Python, Julia: What to Choose in Economics?
 : with [Chase Colman], [Lilia Maliar], and [Serguei Maliar]
 
@@ -67,18 +68,17 @@ Draft coming soon
 **Computational appendices**:
 
 - New Keynesian application jupyter notebooks:
-    - Model
-    - Python
-    - Julia
-    - Matlab
+    - [Model](http://bookshelf.quantecon.org/submission/59fa1b45145fc3772b0cef82)
+    - [Python](http://bookshelf.quantecon.org/submission/59fa1d94145fc3772b0cef85)
+    - [Julia](http://bookshelf.quantecon.org/submission/59fa1cb6145fc3772b0cef83)
+    - [Matlab](http://bookshelf.quantecon.org/submission/59fa1d24145fc3772b0cef84)
 - Various algorithms for growth model:
-    - Model
-    - Python
-    - Julia
-    - Matlab
+    - [Python](http://bookshelf.quantecon.org/submission/5a0075b061780b3e9574d8a4)
+    - [Julia](http://bookshelf.quantecon.org/submission/5a00758361780b3e9574d8a3)
+    - [Matlab](http://bookshelf.quantecon.org/submission/5a00769761780b3e9574d8a5)
 
 
---- -->
+---
 
 [Dave Backus]: http://people.stern.nyu.edu/dbackus/ "Dave Backus"
 [Chase Coleman]: https://github.com/cc7768 "Chase Coleman"
