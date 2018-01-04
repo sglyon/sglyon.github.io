@@ -30,7 +30,7 @@ Draft coming soon
 [Redistributing the Gains From Trade through Progressive Taxation](/files/LW_tax.pdf)
 : with [Michael Waugh]
 
-[Slides](/files/LW_nber.pdf)
+[Slides from NBER Trade and Labor Markets Conference October 2017](/files/LW_nber.pdf)
 
 > This paper studies the optimal degree of tax progressivity as an economy opens
 > to trade. We answer this question within a standard incomplete markets model
@@ -58,8 +58,6 @@ Draft coming soon
 
 ---
 
----
-
 MATLAB, Python, Julia: What to Choose in Economics?
 : with [Chase Colman], [Lilia Maliar], and [Serguei Maliar]
 
@@ -77,8 +75,6 @@ Draft coming soon
     - [Julia](http://bookshelf.quantecon.org/submission/5a00758361780b3e9574d8a3)
     - [Matlab](http://bookshelf.quantecon.org/submission/5a00769761780b3e9574d8a5)
 
-
----
 
 [Dave Backus]: http://people.stern.nyu.edu/dbackus/ "Dave Backus"
 [Chase Coleman]: https://github.com/cc7768 "Chase Coleman"
