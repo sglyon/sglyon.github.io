@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Spencer Lyon</title>
-    <link>http://spencerlyon.com/tags/index.xml</link>
+    <link>http://spencerlyon.com/tags/</link>
     <description>Recent content in Tags on Spencer Lyon</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-EN</language>
@@ -10,7 +10,9 @@
     <webMaster>spencer.lyon@stern.nyu.edu (Spencer Lyon)</webMaster>
     <copyright>(c) 2015-2017 Spencer Lyon.</copyright>
     <lastBuildDate>Wed, 07 Jan 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://spencerlyon.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://spencerlyon.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Oop</title>
