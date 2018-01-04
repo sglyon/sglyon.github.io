@@ -23,7 +23,7 @@ You can find most of my published or open source work on
 
 Some of the projects I've built or worked on include:
 
-- The [NYU data bootcamp](http://nyu.data-bootcamp.com) course (see [the teaching page]({{< relref "teaching.md" >}}))
+- The [NYU data bootcamp](https://nyu.data-bootcamp.com/fall2016/) course (see [the teaching page]({{< relref "teaching.md" >}}))
 - [QuantEcon](https://quantecon.org)
 - [PlotlyJS.jl](http://spencerlyon.com/PlotlyJS.jl/)
 - [dolo python](http://dolo.readthedocs.io/en/latest/)
