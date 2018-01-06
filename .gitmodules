@@ -1,3 +1,6 @@
 [submodule "themes/hyde-y"]
 	path = themes/hyde-y
     url = https://github.com/sglyon/hyde-y.git
+[submodule "themes/material-design"]
+	path = themes/material-design
+	url = https://github.com/pdevty/material-design

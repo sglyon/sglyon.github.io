@@ -1,0 +1,67 @@
+<div class="card-container">
+  <div class="card u-clearfix">
+    <div class="card-title-block">
+      {{ if isset .Params "paper_link" }}
+      <a href="{{ .Get `paper_link` }}">
+        <span class="card-title h4-like">{{ .Get "title" }}</span>
+      </a>
+      {{ else }}
+      <h4 class="card-title">{{ .Get "title" }}</h4>
+      {{ end }}
+
+      {{ if isset .Params "coauthors" }}
+      <span class="card-author">
+        with
+        {{ range $index, $person := (split (.Get "coauthors") ",") }}{{if $index}}, {{end}}{{ $person | markdownify }}{{ end }}
+
+        {{ if isset .Params "journal" }}
+        ({{ .Get "journal" }} {{ if isset .Params "year" }} {{ .Get "year" }}{{end}})
+        {{ end }}
+
+      </span>
+      {{ end }}
+
+
+
+    </div>
+    <div class="card-body-only">
+
+
+      <span class="card-description subtle">{{ .Inner }}</span>
+      {{ if isset .Params "slides_link" }}
+      <a href="{{ .Get "slides_link" }}">
+        <div class="card-slides card-asset">
+          {{ if isset .Params "slides_title" }}
+          {{ .Get "slides_title" }}
+          {{ else }}
+          Slides
+          {{ end }}
+        </div>
+      </a>
+      {{ end }}
+      {{ if isset .Params "code_link" }}
+      <a href="{{ .Get "code_link" }}">
+        <div class="card-code card-asset">
+          {{ if isset .Params "code_title" }}
+          {{ .Get "code_title" }}
+          {{ else }}
+          Code
+          {{ end }}
+        </div>
+      </a>
+      {{ end }}
+      {{ if isset .Params "repo_link" }}
+      <a href="{{ .Get "repo_link" }}">
+        <div class="card-repo card-asset">
+          {{ if isset .Params "repo_title" }}
+          {{ .Get "repo_title" }}
+          {{ else }}
+          Repository
+          {{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+    <!-- <img src="https://s15.postimg.org/temvv7u4r/recipe.jpg" alt="" class="card-media" /> -->
+  </div>
+</div>
