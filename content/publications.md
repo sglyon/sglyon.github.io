@@ -73,6 +73,7 @@ Draft coming soon
 {{% publication
     coauthors="[Pablo Winant](http://www.mosphere.fr)"
     title="The Dolo Modeling Framework"
+    slides_link="/files/LW_nber.pdf"
 %}}
 
 Draft coming soon
