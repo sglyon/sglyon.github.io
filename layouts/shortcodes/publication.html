@@ -27,7 +27,7 @@
     <div class="card-body-only">
 
 
-      <span class="card-description subtle">{{ .Inner }}</span>
+      <span class="card-description subtle">{{ .Inner | markdownify }}</span>
       {{ if isset .Params "slides_link" }}
       <a href="{{ .Get "slides_link" }}">
         <div class="card-slides card-asset">
